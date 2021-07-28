@@ -22,16 +22,18 @@ body {
 .screen{
     text-align: right;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 4rem;
     padding: 20px 5px;
 }
 .calc-button{
     background-color: #dad9db;
+    border-radius: 1rem;
     color: black;
     border: none;
     font-size: 40px;
     height: 100px;
     flex-basis: 24.5%;
+    margin: 0.2rem;
 }
 .calc-button:hover{
     background-color: #ebebeb;
@@ -47,9 +49,10 @@ body {
 }
 
 .calc-button:last-child{
-    background-color: #df974c;
+    /*background-color: #df974c;*/
+    background-color: deepskyblue;
     color:white;
 }
 .calc-button:last-child:hover{
-    background-color: #dfb07e;
+    background-color: lightskyblue;
 }
