@@ -91,6 +91,10 @@ function flushOperation(intBuffer) {
 
 }
 function handleNumber(numberString){
+    if (buffer.length > 9){
+        return;
+    }
+
     if (buffer==='0'){
         buffer = numberString;
     }else{
