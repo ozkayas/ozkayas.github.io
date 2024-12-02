@@ -262,58 +262,145 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
+      <style>
+        .portfolio-content img {
+          width: 100%;
+          height: 200px;
+          object-fit: contain;
+          background-color: #f8f9fa;
+          padding: 1rem;
+          border: 1px solid #dee2e6;
+          border-radius: 8px;
+        }
+
+        .portfolio-content {
+          background-color: white;
+          border-radius: 12px;
+          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+
+        .portfolio-info {
+          padding: 1rem;
+          border-top: 1px solid #dee2e6;
+        }
+      </style>
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>A collection of my mobile applications and projects showcasing my development experience</p>
+        <p>Some projects and applications I've developed</p>
       </div>
 
       <div class="container">
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
-          <!-- CrewApp -->
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-content h-100">
-              <img src="assets/img/portfolio/crewapp.jpg" class="img-fluid" alt="CrewApp">
-              <div class="portfolio-info">
-                <h4>CrewApp</h4>
-                <p>Offline-first app for flight crew and pilots with RealmDB</p>
-                <a href="assets/img/portfolio/crewapp.jpg" title="CrewApp" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TechAssist -->
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-content h-100">
-              <img src="assets/img/portfolio/techassist.jpg" class="img-fluid" alt="TechAssist App">
-              <div class="portfolio-info">
-                <h4>TechAssist</h4>
-                <p>Mobile app for Turkish Airlines technical staff</p>
-                <a href="assets/img/portfolio/techassist.jpg" title="TechAssist" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-
           <!-- Evreka 360 -->
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-content h-100">
-              <img src="assets/img/portfolio/evreka360.jpg" class="img-fluid" alt="Evreka 360">
+              <img src="assets/img/portfolio/evreka360.png" class="img-fluid" alt="Evreka 360">
               <div class="portfolio-info">
                 <h4>Evreka 360</h4>
-                <p>Waste management and city cleaning operations platform</p>
-                <a href="assets/img/portfolio/evreka360.jpg" title="Evreka 360" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <p>Waste Management platform</p>
+                <div class="portfolio-links">
+                  <a href="https://evreka.co" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                <div class="portfolio-tags">
+                  <span class="badge bg-light text-dark">Waste Management</span>
+                  <span class="badge bg-light text-dark">Storybook</span>
+                  <span class="badge bg-light text-dark">List&Map View</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- KodPlanet -->
+          <!-- PayProUz -->
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-content h-100">
-              <img src="assets/img/portfolio/kodplanet.jpg" class="img-fluid" alt="KodPlanet">
+              <img src="assets/img/portfolio/payprouz.png" class="img-fluid" alt="PayProUz">
               <div class="portfolio-info">
-                <h4>KodPlanet</h4>
-                <p>YouTube channel for Flutter & Dart tutorials in Turkish</p>
-                <a href="assets/img/portfolio/kodplanet.jpg" title="KodPlanet" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>PayProUz</h4>
+                <p>Professional payment solution for iOS and Android</p>
+                <div class="portfolio-links">
+                  <a href="https://play.google.com/store/apps/details?id=com.payPRO.paypro_mobile" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                <div class="portfolio-tags">
+                  <span class="badge bg-light text-dark">Payment</span>
+                  <span class="badge bg-light text-dark">Professional</span>
+                  <span class="badge bg-light text-dark">iOS</span>
+                  <span class="badge bg-light text-dark">Android</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flutter Widget Storybook -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/storybook.png" class="img-fluid" alt="Flutter Widget Storybook">
+              <div class="portfolio-info">
+                <h4>Flutter Widget Storybook</h4>
+                <p>UI component library with Figma integration</p>
+                <div class="portfolio-links">
+                  <a href="https://mobile-components.evreka.co" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                <div class="portfolio-tags">
+                  <span class="badge bg-light text-dark">Storybook</span>
+                  <span class="badge bg-light text-dark">UI/UX</span>
+                  <span class="badge bg-light text-dark">Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Routing Manager -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/routing.jpeg" class="img-fluid" alt="Routing Manager">
+              <div class="portfolio-info">
+                <h4>Routing Manager</h4>
+                <p>Responsive web application for route management</p>
+                <div class="portfolio-tags">
+                  <span class="badge bg-light text-dark">Map</span>
+                  <span class="badge bg-light text-dark">Routing</span>
+                  <span class="badge bg-light text-dark">FlutterWeb</span>
+                  <span class="badge bg-light text-dark">DataTable</span>
+                  <span class="badge bg-light text-dark">Responsive</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DOA Green -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/doagreen.png" class="img-fluid" alt="DOA Green">
+              <div class="portfolio-info">
+                <h4>DOA Green</h4>
+                <p>IoT startup project for smart solutions</p>
+                <div class="portfolio-links">
+                  <a href="https://doagreen.com" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                <div class="portfolio-tags">
+                  <span class="badge bg-light text-dark">IoT</span>
+                  <span class="badge bg-light text-dark">StartUp</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wordle Clone TR -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/kelimece.png" class="img-fluid" alt="kelimece">
+              <div class="portfolio-info">
+                <h4>Kelimece</h4>
+                <p>Turkish version of the popular word game : Wordle</p>
+                <div class="portfolio-links">
+                  <a href="https://play.google.com/store/apps/details?id=dev.suat.kelimece" target="_blank" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+                <div class="portfolio-tags">
+                  <span class="badge bg-light text-dark">FlutterWeb</span>
+                  <span class="badge bg-light text-dark">Bloc</span>
+                </div>
               </div>
             </div>
           </div>
